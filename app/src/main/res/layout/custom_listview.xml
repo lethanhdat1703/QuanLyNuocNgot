@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="13dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ImageView
+        android:id="@+id/imageNuocNgots"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/tvIdNuocNgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id nuocNgot"
+        android:layout_marginLeft="3pt"
+        app:layout_constraintStart_toEndOf="@id/imageNuocNgots"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTenNuocNgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên nuocNgot"
+        android:layout_marginLeft="3pt"
+        app:layout_constraintStart_toEndOf="@id/imageNuocNgots"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdNuocNgot"
+
+        />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_marginLeft="3pt"
+        app:layout_constraintStart_toEndOf="@id/imageNuocNgots"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenNuocNgot"
+        />
+    <TextView
+        android:id="@+id/tvNhaCungCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhà cung cấp"
+        android:layout_marginLeft="3pt"
+        app:layout_constraintStart_toEndOf="@id/imageNuocNgots"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:backgroundTint="#FF5252"
+        app:layout_constraintStart_toEndOf="@id/imageNuocNgots"
+        app:layout_constraintTop_toBottomOf="@+id/tvNhaCungCap"
+        app:layout_constraintEnd_toStartOf="@+id/btnXoa"
+        app:layout_constraintBottom_toBottomOf="@id/imageNuocNgots"
+
+        />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:textColor="#FDFAFA"
+        android:backgroundTint="#FF6699"
+        app:layout_constraintStart_toEndOf="@id/btnSua"
+        app:layout_constraintTop_toBottomOf="@+id/tvNhaCungCap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageNuocNgots"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
